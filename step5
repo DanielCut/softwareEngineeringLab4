@@ -1,0 +1,34 @@
+.globl main
+.data
+array: .space 100
+.text
+main:
+	la t0, array
+	li t1, 0
+	li  t2, 100
+	li t3, 0
+
+generate:
+	li a7, 41
+	ecall
+	sw a0, (t0)
+	addi t0, t0, 4
+	addi t1, t1, 1
+	bne t1 t2, generate
+	
+	la t0, array
+	li t1, 0
+	li  t2, 100
+average:
+	lw a0, (t0)
+	add t3, t3, a0
+	addi t0, t0, 4
+	addi t1, t1, 1
+	bne t1 t2, average
+success:
+	div a0, t3, t2
+	li a7, 1
+	ecall
+	li a0, 0
+	li a7, 93
+	ecall

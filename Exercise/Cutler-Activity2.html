@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Employee table</title>
+		<meta name="description" content="3135 Activity">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="Cutler-Activity2.css">
+	</head>
+
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Department</th>
+				<th>Name</th>
+				<th>E-mail</th>
+				<th class="right">Years of Service</th>
+				<th class = "salary">Estimated Salary per month</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th rowspan = "2" scope = "rowgroup">Research</th>
+				<td>John Murach</td>
+				<td>joelmurach@yahoo.com</td>
+				<td class="right">20</td>
+				<td>10000$</td>
+			</tr>
+			<tr>
+				<td>Anna Boehm</td>
+				<td>anne@murach.com</td>
+				<td class="right">33</td>
+				<td>12000$</td>
+			</tr>
+			<tr>
+				<th rowspan = "3" scope = "rowgroup">Development</th>
+				<td>Zak Ruvalcaba</td>
+				<td>zak@modulemedia.com</td>
+				<td class="right">5</td>
+				<td>5000$</td>
+			</tr>
+			<tr>
+				<td>Judy Taylor</td>
+				<td>judy@murach.com</td>
+				<td class="right">3</td>
+				<td>3000$</td>
+			</tr>
+			<tr>
+				<td>Cyndi Vasquez</td>
+				<td>cyndi@murach.com</td>
+				<td class="right">10</td>
+				<td>7000$</td>
+			</tr>
+			<tr>
+				<th rowspan = "2" scope = "rowgroup">Marketing</th>
+				<td>Kelly Slivkoff</td>
+				<td>kelly@murach.com</td>
+				<td class="right">25</td>
+				<td>12000$</td>
+			</tr>
+			<tr>
+				<td>Juliette Baylon</td>
+				<td>juliette@murach.com</td>
+				<td class="right">4</td>
+				<td>3000$</td>
+			</tr>
+			<tr>
+				<td class = "yearsOfService" colspan = "3" > <b>Total Years of service</b></td>
+				<td class = "yearsOfService" ><b>100</b></td>
+				<td class = "yearsOfService" ><b>Total Estimated Salary Expenditure = 52000$</b></td>
+			</tr>
+		</tbody>
+	</table>
+	<footer>
+		<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.globl main
+.text
+main:
+	li t0, 0
+	li t1, 1
+	li t2, 101
+loop:
+	add t0, t0, t1
+	addi t1, t1, 1
+	bne t1 t2, loop
+	beq t1 t2, success
+success:
+	li a0, 0
+	li a7, 93
+	ecall

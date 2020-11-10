@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Weather Report</title>
+	<link rel="stylesheet" href="Cutler-Activity8.css" />
+	<script src="Cutler-Activity8.js"></script>
+</head>
+
+<body>
+<header>
+	<h1>Weather Report</h1>
+	<!-- For people who don't have JavaScript enabled-->
+	<noscript>This web page requires JavaScript to be enabled on your browser.</noscript>
+</header>
+
+<main>
+	<h1>Use of Array with Temperature</h1>
+
+	<label for="days">Day:</label>
+	<select name="days" id= "days">
+		<option value="Monday">Monday</option>
+		<option value="Tuesday">Tuesday</option>
+		<option value="Wednesday">Wednesday</option>
+		<option value="Thursday">Thursday</option>
+		<option value="Friday">Friday</option>
+		<option value="Saturday">Saturday</option>
+		<option value="Sunday">Sunday</option>
+	</select>
+
+	<p>
+
+	</p>
+	<label for="Temperature">Temp:</label>
+	<input type="text" id="Temperature"><br>
+
+	<label>&nbsp;</label>
+	<input type="button" id="addTemperature" value="Add temperature to Array" >
+	<input type="button" id="displayResults" value="Display Results" >
+	<input type="button" id="displayTemperature" value="Display Temperature" ><br>
+
+	<div id="result"></div>
+	<table id="temperature_table"></table>
+</main>
+
+<footer>
+	<br/>
+	<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+	<br/>
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+</footer>
+
+</body>
+</html>

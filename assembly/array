@@ -1,0 +1,7 @@
+.globl main
+.data
+buffer: .space 100
+.text
+main:
+	la t0, buffer
+	

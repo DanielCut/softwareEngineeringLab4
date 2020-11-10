@@ -1,0 +1,13 @@
+addi x5, x0, 0
+addi x6, x0, 100
+add x12, x11, x0
+loop:
+bne x5, x6, exit
+sw x5, 32(x12)
+label:
+slli x12, x11, 4
+sub x5, x6, x11
+beq x5, x5, loop
+exit:
+addi x5, x0, 100
+jal x1, label
